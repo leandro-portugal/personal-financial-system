@@ -1,13 +1,13 @@
 import { useState, useEffect} from 'react';
 import * as C from './App.styles';
 import { Item } from './types/Item';
-import { Category } from './types/Category';
 import { items } from './data/items';
 import { categories } from './data/categories';
 import { getCurrentMonth } from './helpers/dateFilter'; 
 import { filterListByMonth } from './helpers/dateFilter';
 import { TableArea } from './components/TableArea';
 import { Information } from './components/Information';
+import { InputArea } from './components/InputArea';
 
 
 
@@ -45,6 +45,12 @@ const monthChange = (newMonth: string) => {
   setCurrentMonth(newMonth);
 }
    
+const addItem = (item : Item) =>{
+
+  let newList = [...list];
+  newList.push(item);
+  setList(newList);
+}
   return (
     <C.Container>
       <C.Header>
@@ -57,7 +63,10 @@ const monthChange = (newMonth: string) => {
         income = {income}
         expense = {expense}
         />
+
+        
         <TableArea list={filteredList}/>
+        <InputArea onAdd={addItem}/> 
       </C.Body>
     </C.Container>
 
