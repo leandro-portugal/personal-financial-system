@@ -9,7 +9,7 @@ export const categories: Category = {
     condominium: { title: 'Condominio',  color: 'peru', expense: true},
     home: { title: 'Contas de Casa',  color: 'chocolate', expense: true},
     others: { title: 'Outros Gastos',  color: 'magenta', expense: true},
-    salary: { title: 'Salario',  color: 'green', expense: false},
+    salary: { title: 'Salário',  color: 'green', expense: false},
     extras: { title: 'Renda Extra',  color: 'green', expense: false},
 
 }
