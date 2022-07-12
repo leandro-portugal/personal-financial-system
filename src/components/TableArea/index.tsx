@@ -2,6 +2,8 @@ import * as c from './styles';
 import { Item } from '../../types/Item';
 import {TableItem} from '../TableItem'
 
+
+
 type props = {
     list: Item[]
 }
