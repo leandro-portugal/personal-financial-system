@@ -6,6 +6,7 @@ import { items } from './data/items';
 import { categories } from './data/categories';
 import { getCurrentMonth } from './helpers/dateFilter'; 
 import { filterListByMonth } from './helpers/dateFilter';
+import { TableArea } from './components/TableArea';
 
 const App = () => {
 
@@ -26,7 +27,7 @@ const App = () => {
         <C.HeaderText>Controle de Finanças Pessoais</C.HeaderText>
       </C.Header>
       <C.Body>
-        ...
+        <TableArea list={filteredList}/>
       </C.Body>
     </C.Container>
 

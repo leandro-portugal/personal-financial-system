@@ -7,7 +7,9 @@ export const categories: Category = {
     fuel: { title: 'Combustivel',  color: 'orange', expense: true},
     card: { title: 'Cartão de Credito',  color: 'tomato', expense: true},
     condominium: { title: 'Condominio',  color: 'peru', expense: true},
-    home: { title: 'Condominio',  color: 'chocolate', expense: true},
+    home: { title: 'Contas de Casa',  color: 'chocolate', expense: true},
+    others: { title: 'Outros Gastos',  color: 'magenta', expense: true},
     salary: { title: 'Salario',  color: 'green', expense: false},
+    extras: { title: 'Renda Extra',  color: 'green', expense: false},
 
 }
